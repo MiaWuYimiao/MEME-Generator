@@ -1,0 +1,129 @@
+
+
+h1{
+ text-align: center;
+ font-size: 3rem;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 50;
+}
+
+h2{
+ text-align: center;
+ font-size: 1rem;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 50;
+}
+
+/* .input-style {
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    font-size: small;
+} */
+
+label{
+    display: inline-block;
+    width: 140px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    font-size: small;
+    margin: 10px;
+}
+
+input{
+    float: right;
+    width: 80%;
+    padding: 6px;
+}
+
+#button{
+    text-align: right;
+}
+
+button{
+    background-color: rgb(188, 144, 230);
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    border:4px;
+    border-radius:4px;
+}
+
+#input-div{
+    background-color:rgba(222, 224, 225, 0.824);
+    margin: 0px;
+    padding: 10px;
+}
+.subContainer{
+    position: relative;
+    width: 45%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top {
+    position: absolute;
+    top: 8px;
+    left: 10%;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imgFormat{
+    opacity: 1;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color:rgb(75, 73, 73);
+    font-size: 5rem;
+}
+
+.subContainer:hover .imgFormat{
+    opacity: 0.3;
+}
+
+.subContainer:hover .top{
+    opacity: 0.3;
+}
+
+.subContainer:hover .bottom{
+    opacity: 0.3;
+}
+
+.subContainer:hover .middle{
+    opacity: 1;
+}
