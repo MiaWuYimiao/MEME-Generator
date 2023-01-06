@@ -11,10 +11,11 @@
     <div id="input-div">
         <h1>I CAN HAZ MEMEZ?</h1>
         <h2>Fill out the form to start creating memes!</h2>
-        <form action="">
+        <form class="form-group" action="">
             <div class="input-style">
                 <label for="imageURL">Image URL</label>
-                <input type="text" placeholder="What's the URL for your meme image?" id="imageURL">
+                <input type="text" class = "form-control" placeholder="What's the URL for your meme image?" id="imageURL">
+                <span class="text-error"  id="error_imgurl"></span>
             </div>
             <div class="input-style">
                 <label for="textTop">Text On Top</label>
