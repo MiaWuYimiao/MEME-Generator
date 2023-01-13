@@ -41,13 +41,13 @@ function clickHandler(event){
     const urlInput = document.querySelector('#imageURL');
     const textTopInput = document.querySelector('#textTop');
     const textBotInput = document.querySelector('#textBot');
-    var urlErrTooltip = document.querySelector('#error_imgurl');
+    // var urlErrTooltip = document.querySelector('#error_imgurl');
     console.log("urlInput.value = ", urlInput.value);
     console.log("textTopInput.value = ", textTopInput.value);
     console.log("textBotInput.value = ", textBotInput.value);
 
     //set url error tooltip to no display
-    urlErrTooltip.setAttribute('class', 'text-error'); 
+    // urlErrTooltip.setAttribute('class', 'text-error'); 
 
     //create new div element
     const subContainer = document.createElement("div");
@@ -57,12 +57,12 @@ function clickHandler(event){
     const newImg = document.createElement('img'); //create a new image
     newImg.classList.add('imgFormat');//adding a class to resize image
     newImg.setAttribute('src', urlInput.value);
-    newImg.addEventListener('error', function handleError() {
-        urlErrTooltip.setAttribute('class', 'text-error display_block'); 
-        urlErrTooltip.innerHTML = "Please enter a valid image URL.";
+    // newImg.addEventListener('error', function handleError() {
+    //     urlErrTooltip.setAttribute('class', 'text-error display_block'); 
+    //     urlErrTooltip.innerHTML = "Please enter a valid image URL.";
 
-        return;
-    });
+    //     return;
+    // });
     subContainer.appendChild(newImg);
 
     // add hover effect
